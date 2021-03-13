@@ -5,10 +5,10 @@ import C1 from './componentes/comp1';
 export default function AppOne() {
   return (
     <View style={estilos.conteiner}>
-      <C1 />
-      <C1 />
-      <C1 />
-      <C1 />
+      <C1 estudo="React Native" nota="10" cor="#ff0"/>
+      <C1 estudo="JavaScrip" nota="10" cor="#f0f"/>
+      <C1 estudo="Css" nota="10" cor="#0ff"/>
+      <C1 estudo="Json" nota="10" cor="#000"/>
       <Text style={estilos.txt0}> Estudos React</Text>
       <Text style={{color: '#f00', fontSize:48}}> Estudos React</Text>
     </View>
@@ -18,7 +18,7 @@ export default function AppOne() {
 const estilos = StyleSheet.create({
   conteiner: {
     flex: 1,
-    backgroundColor: '#444',
+    backgroundColor: '#ddd',
     alignItems: 'center',
     justifyContent: 'center',
   },
