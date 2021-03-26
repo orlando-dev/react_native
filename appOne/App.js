@@ -1,15 +1,12 @@
 import React, {Component} from 'react';
-import {StyleSheet, View, Text} from 'react-native';
-import C1 from './componentes/comp1';
+import {View, Text} from 'react-native';
+import Caixas from './componentes/Caixas.js'
 import Estilos from './estilos/Estilos.js';
 
 export default function AppOne() {
   return (
     <View style={Estilos.conteiner}>
-      <C1 estudo="React Native" nota="10"/>
-      <C1 estudo="JavaScrip" nota="10"/>
-      <C1 estudo="Css" nota="10"/>
-      <C1 estudo="Json" nota="10"/>
+      <Caixas/>
       <Text style={Estilos.textoPadrao}> Estudos React</Text>
       <Text style={Estilos.textoTitulo}> Estudos React</Text>
     </View>

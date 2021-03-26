@@ -10,8 +10,7 @@ export default StyleSheet.create({
     },
     textoEstudos: {
         color: '#00f',
-        fontSize: 15,
-        
+        fontSize: 15
     },
     textoTitulo: {
         color: '#f00',
