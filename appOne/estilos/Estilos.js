@@ -19,5 +19,10 @@ export default StyleSheet.create({
     textoPadrao: {
         color: '#000',
         fontSize:20
+    },
+    ImgLogo: {
+        width: 200,
+        height: 200,
+        resizeMode: 'contain'
     }
 })
