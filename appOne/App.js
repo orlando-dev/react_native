@@ -4,6 +4,12 @@ import Caixas from './componentes/Caixas.js'
 import Estilos from './estilos/Estilos.js';
 
 
+const  dobro=(n) => {
+  return n*2
+}
+
+const soma=(n1, n2)=>n1+n2
+
 export default function AppOne() {
   let exibir = false;
   return (
@@ -16,6 +22,7 @@ export default function AppOne() {
       <Caixas exibirSe={exibir}/>
       <Text style={Estilos.textoPadrao}> Estudos React</Text>
       <Text style={Estilos.textoTitulo}> Estudos React</Text>
+      <Text>{dobro(3)} {soma(1,6)} </Text>
 
       {exibir?<Text>Estudos React Native</Text>: <Text> - - - </Text>}
     </View>
