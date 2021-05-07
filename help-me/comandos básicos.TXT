@@ -1,0 +1,14 @@
+1 - Para iniciar o android dentro do diretório do aplicativo:
+
+npx react-native run-android
+npm react-native run-android
+react-native run-android
+
+2 - Criar um projeto
+
+react-native init appOne
+
+3 - Mostrar lista de androids criados
+
+emulator -list-avds
+

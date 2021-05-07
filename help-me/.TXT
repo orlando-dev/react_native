@@ -1,0 +1,4 @@
+npm install react-native-elements
+
+# or with yarn
+yarn add react-native-elements

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, View, Text, Image, Button, Alert} from 'react-native';
 import Caixas from './componentes/Caixas.js'
 import Estilos from './estilos/Estilos.js';
-
+import ListPlana from './componentes/ListaPlana.js'
 
 const  dobro=(n) => {
   return n*2
@@ -17,22 +17,24 @@ export default function AppOne() {
   let exibir = false;
   return (
     <View style={Estilos.conteiner}>
-      <Button
+      
+      {/* <Button
           title="Mostrar Ojcroft"
           onPress={msg}
-      />
-      <Image 
+      /> */}
+      {/* <Image 
           // source={{uri:'https://yt3.ggpht.com/ytc/AAUvwniI4y4LvxThGmlmu2xA4lM0-BG581_wtv52hBYq=s88-c-k-c0x00ffffff-no-rj'}} 
           source={require('./assets/logoOjCroft.png')} 
           style={Estilos.ImgLogo}
-      />
+      /> */}
       {/* Aqui a baixo fica as caixas que antes eram exibidas */}
       {/* <Caixas exibirSe={exibir}/> */} 
       <Text style={Estilos.textoPadrao}> Estudos React</Text>
       <Text style={Estilos.textoTitulo}> Estudos React</Text>
-      <Text>{dobro(3)} {soma(1,6)} </Text>
+      <ListPlana/>
+      {/* <Text>{dobro(3)} {soma(1,6)} </Text> */}
 
-      {exibir?<Text>Estudos React Native</Text>: <Text> - - - </Text>}
+      {/* {exibir?<Text>Estudos React Native</Text>: <Text> - - - </Text>} */}
     </View>
   );
 }
